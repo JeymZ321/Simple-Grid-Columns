@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Columns</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(to right, #f76c26, #c40003);
+        animation: gradientAnimation 10s ease infinite alternate;
+    }
+
+    @keyframes gradientAnimation {
+        25% {
+            background-position: 20% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    .column {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+        font-size: 1.5rem;
+        margin-top: 0;
+        font-weight: bold;
+    }
+
+    p {
+        color: #666;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column">
+        <h2>User Experience</h2>
+        <p>The user experience is how a user interacts with and experiences a product, system or service. It includes a person's perceptions of utility, ease of use, and efficiency</p>
+    </div>
+    <div class="column">
+        <h2>Content</h2>
+        <p>The contents of a box. the subjects or topics covered in a book or document. the chapters or other formal divisions of a book or document: a table of contents.</p>
+    </div>
+    <div class="column">
+        <h2>Grid Layout</h2>
+        <p>CSS grid layout or CSS grid creates complex responsive web design grid layouts more easily and consistently across browsers. Historically, there have been other methods for controlling web page layout methods, such as tables, floats, and more recently, CSS Flexible Box Layout.</p>
+    </div>
+</div>
+
+</body>
+</html>
